@@ -1,6 +1,13 @@
-for i in 1..100
-  if i % 3
+for n in 1..100
+  if n % 3 == 0
     puts "Bit"
 
-  if i % 5
+elsif n % 5 == 0
     puts "Maker"
+
+elsif n % 15 == 0
+    puts "BitMaker"
+
+else puts n
+end
+end
