@@ -1,21 +1,16 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-def grocery(grocery_list)
-  puts grocery_list
+def grocery(g)
+  g.each do |groceries|
+    puts "*" + groceries
 end
-
-grocery_list.each do |grocery_list|
-  puts "*" + grocery_list
 end
-
-
-
 
 # Add rice to list
 grocery(grocery_list << "rice" )
 
 # Output total number of items on list
-grocery(grocery_list.count)
+puts grocery_list.count
 
 # check to see if list has bananas, if it does output you need bananas, otherwise output you dont need them
 if grocery_list == "bananas"
@@ -25,4 +20,11 @@ else
   puts "you do not need bananas today"
 end
 # display second item in list
-grocery(grocery_list[1])
+grocery_list[1]
+
+# sort alphabetically
+grocery(grocery_list.sort)
+
+# delete salmon and redisplay
+grocery_list.delete_at(3)
+puts grocery_list
