@@ -6,4 +6,7 @@ end
 
 # Add rice to list
 grocery_list << "rice"
-puts grocery_list
+  puts grocery_list
+
+# Output total number of items on list
+  puts grocery_list.count
